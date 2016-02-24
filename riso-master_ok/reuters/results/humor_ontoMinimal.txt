@@ -1,0 +1,89 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coneitos="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rel="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/HasContext">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humorist/n/someone_who_acts_speaks_or_writes_in_an_amusing_way">
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_trait_of_appreciating_the_humorous"/>
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_quality_of_being_funny"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/v/put_into_a_good_mood">
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/indulgence/n/the_act_of_indulging_or_gratifying_a_desire"/>
+    <rel:IsA rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/gratify/v/yield"/>
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/temper/n/a_characteristic_state_of_feeling"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/subjective">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humorous/a/full_of_or_characterized_by_humor">
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_quality_of_being_funny"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/antiquity/n/the_historic_period_preceding_the_middle_ages_in_europe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/hasContext">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/IsA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/one_of_the_four_fluids_in_the_body_whose_balance_was_believed_to_determine_your_emotional_and_physical_state">
+    <rel:HasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/antiquity/n/the_historic_period_preceding_the_middle_ages_in_europe"/>
+    <rel:HasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/middle_age/n/the_period_of_history_between_classical_antiquity_and_the_italian_renaissance"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_trait_of_appreciating_the_humorous">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/HasProperty">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor@CONTEXT">
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/temper/n/a_characteristic_state_of_feeling"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_quality_of_being_funny"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_trait_of_appreciating_the_humorous"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/antiquity/n/the_historic_period_preceding_the_middle_ages_in_europe"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/subjective"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/middle_age/n/the_period_of_history_between_classical_antiquity_and_the_italian_renaissance"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/indulgence/n/the_act_of_indulging_or_gratifying_a_desire"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/DerivedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/middle_age/n/the_period_of_history_between_classical_antiquity_and_the_italian_renaissance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/indulgence/n/the_act_of_indulging_or_gratifying_a_desire">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor/n/the_quality_of_being_funny">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/temper/n/a_characteristic_state_of_feeling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor">
+    <rel:HasProperty rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/subjective"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/UsedFor">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/gratify/v/yield">
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/indulgence/n/the_act_of_indulging_or_gratifying_a_desire"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/these_glass">
+    <rel:UsedFor rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/humor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

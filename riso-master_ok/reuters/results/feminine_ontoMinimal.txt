@@ -1,0 +1,84 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:coneitos="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rel="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/HasContext">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/female/a/characteristic_of_or_peculiar_to_a_woman">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/masculine/a/of_grammatical_gender">
+    <rel:Antonym rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/a/of_grammatical_gender"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminize/a">
+    <rel:RelatedTo rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/SimilarTo">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/RelatedTo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/common/a">
+    <rel:RelatedTo rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/n/a_gender_that_refers_chiefly_to_females_or_to_objects_classified_as_female">
+    <rel:IsA rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/gender/n/a_grammatical_category_in_inflected_languages_governing_the_agreement_between_nouns_and_pronouns_and_adjectives"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/hasContext">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/IsA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/a/of_grammatical_gender">
+    <rel:DerivedFrom rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/n/a_gender_that_refers_chiefly_to_females_or_to_objects_classified_as_female"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/unstressed/a/not_bearing_a_stress_or_accent">
+    <rel:SimilarTo rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/a/ending_on_an_unaccented_beat_or_syllable"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/music/n/an_artistic_form_of_auditory_communication_incorporating_instrumental_or_vocal_tones_in_a_structured_and_continuous_manner">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/gender/n">
+    <rel:RelatedTo rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/gender/n/a_grammatical_category_in_inflected_languages_governing_the_agreement_between_nouns_and_pronouns_and_adjectives">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/Antonym">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/r/DerivedFrom">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/a/associated_with_women_and_not_with_men">
+    <rel:SimilarTo rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/female/a/characteristic_of_or_peculiar_to_a_woman"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine@CONTEXT">
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/gender/n/a_grammatical_category_in_inflected_languages_governing_the_agreement_between_nouns_and_pronouns_and_adjectives"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/music/n/an_artistic_form_of_auditory_communication_incorporating_instrumental_or_vocal_tones_in_a_structured_and_continuous_manner"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine"/>
+    <rel:hasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/female/a/characteristic_of_or_peculiar_to_a_woman"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/feminine/a/ending_on_an_unaccented_beat_or_syllable">
+    <rel:HasContext rdf:resource="http://lsi.dsc.ufcg.edu.br/riso.owl#/c/en/music/n/an_artistic_form_of_auditory_communication_incorporating_instrumental_or_vocal_tones_in_a_structured_and_continuous_manner"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>

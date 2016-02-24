@@ -22,7 +22,7 @@ public class VetorTematicoDAO {
 		List<VetorTematico> vetores = new ArrayList<VetorTematico>();  
 		try {
 			con = PostgresConnectionManager.getInstance().getConnection();
-			stm = con.prepareStatement("SELECT vetoresTematicos FROM termoEnriquecido WHERE termo = '"+termo+"'");
+			stm = con.prepareStatement("SELECT vetoresTematicos FROM termoEnriquecido WHERE termo = '"+termo.toLowerCase()+"'");
 			rs = stm.executeQuery();  
 			while(rs.next()){
 				String vet = URLDecoder.decode(rs.getString("vetoresTematicos"),"UTF-8");
@@ -57,7 +57,7 @@ public class VetorTematicoDAO {
 				String conceito = vetorDaVez.getConceito();
 				String vetor = vetorDaVez.toString();
 				vetor = URLEncoder.encode(vetor,"UTF-8");
-				String query = "INSERT INTO termoEnriquecido(termo,vetorestematicos) VALUES ('"+conceito+"','"+vetor+"')"; 
+				String query = "INSERT INTO termoEnriquecido(termo,vetorestematicos) VALUES ('"+conceito.toLowerCase()+"','"+vetor+"')"; 
 				stm.addBatch(query); 
 			}  
 			stm.executeBatch();

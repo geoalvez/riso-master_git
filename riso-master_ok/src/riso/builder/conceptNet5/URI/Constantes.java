@@ -149,6 +149,7 @@ public class Constantes {
 
 //	public static final int ZERO = 0; george remover 20151130
 	public static final int ZERO = 1;
+	public static final int DEZ = 10;
 
 	public static final String[] STOP_WORDS = {
 		"http",

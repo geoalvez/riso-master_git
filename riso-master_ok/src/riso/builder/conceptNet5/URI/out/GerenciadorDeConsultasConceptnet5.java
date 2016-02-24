@@ -127,28 +127,28 @@ public class GerenciadorDeConsultasConceptnet5 {
 
 		// String uriFinal = fonte+conceito.toLowerCase();
 		String uriFinal = fonte+(conceito.toLowerCase())+caracter+Constantes.LIMIT; // george remover 20151130
-		Aresta aresta = consultaConceptnet5(uriFinal+Constantes.ZERO);
+		Aresta aresta = consultaConceptnet5(uriFinal+Constantes.DEZ);
 		// Aresta aresta = consultaConceptnet5(uriFinal);
-		Aresta arestaAux = null;
-		if(aresta.getNumFound() > JANELA){
-			int qtIt = aresta.getNumFound() / JANELA;
-			int rest = aresta.getNumFound() % JANELA;
-			int i = 1;
-			aresta = consultaConceptnet5(uriFinal+JANELA);
-			while(i < qtIt){
-				arestaAux = consultaConceptnet5(uriFinal+JANELA+Constantes.OFFSET+i*JANELA);
-				aresta.addSetEdge(arestaAux.getEdges());
-				i++;
-			}
-			arestaAux = consultaConceptnet5(uriFinal+rest+Constantes.OFFSET+i*JANELA);
-			aresta.addSetEdge(arestaAux.getEdges());
-		}else{
-			aresta = consultaConceptnet5(uriFinal+aresta.getNumFound());
-		}
+//		Aresta arestaAux = null;
+//		if(aresta.getNumFound() > JANELA){
+//			int qtIt = aresta.getNumFound() / JANELA;
+//			int rest = aresta.getNumFound() % JANELA;
+//			int i = 1;
+//			aresta = consultaConceptnet5(uriFinal+JANELA);
+//			while(i < qtIt){
+//				arestaAux = consultaConceptnet5(uriFinal+JANELA+Constantes.OFFSET+i*JANELA);
+//				aresta.addSetEdge(arestaAux.getEdges());
+//				i++;
+//			}
+//			arestaAux = consultaConceptnet5(uriFinal+rest+Constantes.OFFSET+i*JANELA);
+//			aresta.addSetEdge(arestaAux.getEdges());
+//		}else{
+//			aresta = consultaConceptnet5(uriFinal+aresta.getNumFound());
+//		}
 		
-		if (aresta.getNumFound() == 0){
-			System.out.println("QTD ZEROOOO");
-		}
+		if (aresta.getNumFound() == 0)
+			System.out.println("NADA ENCONTRADO");
+		
 		return aresta;
 	}
 	

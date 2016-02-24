@@ -70,7 +70,7 @@ public class RISO {
 						System.out.println("calculaVetorTermos: " + conceito);
 						desambiguador.calculaVetorTermos(conceito);
 						if (desambiguador.getVetorTematico().size() > 0){
-							System.out.println("desambiguador.getVetorTematico().size() > 0: " + conceito);
+							System.out.println("Num de vetores: " + desambiguador.getVetorTematico().size() +" Conceito: " + conceito);
 							VetorTematico vetor = desambiguador.getVetorTematico().get(0);
 							Topico topico = vetor.getVetor().get(0);
 

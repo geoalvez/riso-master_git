@@ -1,0 +1,2 @@
+A [Software] [bug] is an error, flaw, failure, or fault in a [computer program] or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
+Most bugs arise from mistakes and errors made by people in either a program's source code or its design, or in frameworks and operating systems used by such programs, and a few are caused by compilers producing [incorrect code]. [software]
