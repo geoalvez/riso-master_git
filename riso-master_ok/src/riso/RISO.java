@@ -1,5 +1,7 @@
 package riso;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -17,6 +19,9 @@ import riso.db.vetoresTematicos.VetorTematicoDAO;
 public class RISO {
 	
 	public static void main(String args[]){
+		
+		List<Documento> novosDocumentos = new ArrayList<Documento>();
+		List<String> novosConceitos = new ArrayList<String>();
 		
 		Biblioteca biblioteca = new Biblioteca();
 
@@ -38,6 +43,7 @@ public class RISO {
 			if(!palavrasMarcadas.isEmpty()){
 				boolean esseDocumentoExiste = bibDAO.verificaSeDocumentoExiste(doc);
 				if(!esseDocumentoExiste){
+					novosDocumentos.add(doc);
 					bibDAO.salvaDocumento(doc);
 				}
 				String conceitos[] = palavrasMarcadas.split(",");
@@ -61,6 +67,11 @@ public class RISO {
 							System.out.println("Fim Enriquece Conceito: " + conceito);
 							vetores = vetorDAO.obtemVetoresTematicos(conceito);
 							System.out.println("Obteve vetor tematico Conceito: " + conceito);
+							
+							if (!vetores.isEmpty()){
+								novosConceitos.add(conceito);
+							}
+							
 						}else{
 							System.out.println("Vetor nao vazio"); // george remover
 						}
@@ -78,7 +89,6 @@ public class RISO {
 							System.out.println("Indexa: " + conceito);
 							onto.indexaDocumento(doc, conceito, topico);
 							System.out.println("Fim: " + conceito);
-							
 						}
 						
 					}
@@ -87,6 +97,26 @@ public class RISO {
 			}
 			
 			
+		}
+		
+		
+		System.out.println("\n\n\n\n");
+		if (novosDocumentos.isEmpty()){
+			System.out.println("Nenhum documento novo foi indexado.");
+		} else {
+			System.out.println("Indexado(s) " + novosDocumentos.size() + " novo(s) documento(s): ");
+			for (Documento documento : novosDocumentos) {
+				System.out.println(documento.getNomeArquivo());
+			}
+		}
+		System.out.println("\n\n");
+		
+		
+		if (novosConceitos.isEmpty()){
+			System.out.println("Nenhum novo conceito foi indexado.");
+		} else {
+			System.out.println("Indexado(s) " + novosConceitos.size() + " novo(s) conceito(s)");
+			System.out.println(Arrays.toString(novosConceitos.toArray()));
 		}
 		
 	}
